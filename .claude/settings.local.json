@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(poetry install)",
+      "Bash(pip install fastapi uvicorn sqlmodel psycopg2 python-jose[cryptography] python-dotenv better-exceptions)",
+      "Bash(python -m uvicorn main:app --reload --port 8000)",
+      "Bash(python -c \"from main import app; print(''Backend imports successfully'')\")",
+      "Bash(npm install better-auth @better-fetch/fetch)",
+      "Bash(npm install better-auth)",
+      "Bash(mkdir -p frontend/src/lib)",
+      "Bash(npm install)",
+      "Bash(uv add sqlmodel fastapi uvicorn psycopg2)",
+      "Bash(python -c \"from main import app; print(''Server imports successfully - NoReferencedTableError fixed'')\")",
+      "Bash(uv add python-jose[cryptography] passlib)",
+      "Bash(uv add passlib)",
+      "Bash(pip install passlib)",
+      "Bash(pip install python-jose[cryptography])",
+      "Bash(pip install sqlmodel)",
+      "Bash(pip install fastapi uvicorn sqlmodel psycopg2 python-jose[cryptography] python-dotenv better-exceptions passlib)",
+      "Bash(python -m uvicorn main:app --reload)"
+    ]
+  }
+}
